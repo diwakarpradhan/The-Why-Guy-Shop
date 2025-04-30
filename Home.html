@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Why Guy - Product Links</title>
+    <meta name="description" content="Direct links to products featured in The Why Guy videos." />
+    <meta name="author" content="The Why Guy" />
+
+    <meta property="og:title" content="The Why Guy @Shop" />
+    <meta property="og:description" content="Direct links to products featured in The Why Guy videos." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@thewhyguy" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <style>
+        :root {
+            --background: rgb(24, 26, 42);
+            --foreground: rgb(237, 240, 245);
+            --secondary: rgb(45, 49, 66);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--foreground);
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 3rem 1rem;
+        }
+
+        header {
+            max-width: 48rem;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: rgba(237, 240, 245, 0.8);
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            color: var(--foreground);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .social-link:hover {
+            opacity: 1;
+        }
+
+        .social-link span {
+            margin-left: 0.5rem;
+        }
+
+        .notice-card {
+            background: var(--secondary);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            max-width: 32rem;
+            margin: 0 auto;
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .product-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            background: var(--secondary);
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: var(--foreground);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .product-footer {
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex: 1;
+        }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: rgba(237, 240, 245, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .product-card img {
+                height: 150px;
+            }
+
+            .product-footer {
+                padding: 0.75rem;
+                font-size: 0.875rem;
+            }
+
+            body {
+                padding: 2rem 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-footer {
+                font-size: 0.75rem;
+            }
+
+            /* Remove the flex-direction: column from social-links */
+            .social-links {
+                flex-direction: row;
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>THE WHY GUY</h1>
+    </header>
+
+    <main class="product-grid">
+        <!-- Products will be inserted here by JavaScript -->
+    </main>
+    
+    <footer>
+        <div class="social-links">
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                </svg>
+                <span>YouTube</span>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <span>Instagram</span>
+            </a>
+        </div>
+        <p class="subtitle">Direct links to products you saw in my videos</p>
+        <p>© <span id="year"></span> The Why Guy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Product data
+        const products = [
+            {
+                id: 1,
+                name: 'Redragon K617',
+                image: 'https://m.media-amazon.com/images/I/610P9MPegbL._SX522_.jpg',
+                link: 'https://amzn.in/d/bW8qicK'
+            },
+            {
+                id: 2,
+                name: 'OFFICIAL BARBIE PHONE',
+                image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6',
+                link: 'https://amazon.com/product/barbie-phone'
+            },
+            {
+                id: 3,
+                name: '50" OLED ULTRAWIDE MONITOR',
+                image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6',
+                link: 'https://amazon.com/product/monitor'
+            },
+            {
+                id: 4,
+                name: 'ADJUSTABLE TINT SUNGLASSES',
+                image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1',
+                link: 'https://amazon.com/product/sunglasses'
+            },
+            {
+                id: 5,
+                name: 'RGB LIGHT STRIP',
+                image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1',
+                link: 'https://amazon.com/product/light-strip'
+            },
+            {
+                id: 6,
+                name: 'RC CRAWLER JEEP',
+                image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d',
+                link: 'https://amazon.com/product/rc-jeep'
+            },
+            {
+                id: 7,
+                name: 'ERGONOMIC MOUSE',
+                image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6',
+                link: 'https://amazon.com/product/mouse'
+            },
+            {
+                id: 8,
+                name: 'PORTABLE GAME CONSOLE',
+                image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d',
+                link: 'https://amazon.com/product/game-console'
+            }
+        ];
+
+        // Render products
+        const productGrid = document.querySelector('.product-grid');
+        products.forEach(product => {
+            const productCard = document.createElement('a');
+            productCard.href = product.link;
+            productCard.target = '_blank';
+            productCard.rel = 'noopener noreferrer';
+            productCard.className = 'product-card';
+            
+            productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <div class="product-footer">
+                    <span>${product.name}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                </div>
+            `;
+            
+            productGrid.appendChild(productCard);
+        });
+
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // IMPORTANT: Keep GPT Engineer script tag
+        const gptEngScript = document.createElement('script');
+        gptEngScript.src = 'https://cdn.gpteng.co/gptengineer.js';
+        gptEngScript.type = 'module';
+        document.body.appendChild(gptEngScript);
+    </script>
+</body>
+</html>
